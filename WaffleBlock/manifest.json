@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome Extension Hide Waffle",
+  "version": "1.0",
+  "description": "This extension hides the O365 Waffle Menu",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.sharepoint.com/*",
+	  "https://*.officeapps.live.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "page_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
