@@ -1,8 +1,8 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Chrome Extension Hide Waffle",
   "version": "1.0",
-  "description": "This extension blocks access to the O365 Waffle Menu",
+  "description": "This extension hides the O365 Waffle Menu",
   "content_scripts": [
     {
       "matches": [
@@ -14,8 +14,5 @@
   ],
   "page_action": {
     "default_icon": "icon.png"
-  },
-  "background": {
-    "scripts": ["background.js"]
   }
 }
